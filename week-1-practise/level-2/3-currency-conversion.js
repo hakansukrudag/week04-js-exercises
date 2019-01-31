@@ -13,7 +13,7 @@ function convertToUSD(priceInUSD) {
 
 var product = 'The life and times of Mozafar Haider';
 var price = 12.5;
-var priceInUSD = convertToUSD(price);
+var priceInUSD = convertToUSD(price * 1.4);
 
 console.log('Product: ' + product);
 console.log('Price in USD: ' + priceInUSD);
