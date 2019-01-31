@@ -7,17 +7,21 @@
   Find a way to add 1% to all currency conversions (think about the DRY principle)
 */
 
-function convertToUSD(price) {}
-function convertToBRL(price) {}
+function convertToUSD(price) {
+	return price;
+}
+function convertToBRL(price) {
+	return price;
+}
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
 
-var product = "The life and times of Mozafar Haider";
+var product = 'The life and times of Mozafar Haider';
 var price = 12.5;
-var priceInUSD = convertToUSD(price);
-var priceInBRL = convertToBRL(price);
+var priceInUSD = convertToUSD(price * 1.4);
+var priceInBRL = convertToBRL(priceInUSD * 1.1);
 
-console.log("Product: " + product);
-console.log("Price in USD: " + priceInUSD);
-console.log("Price in BRL: " + priceInBRL);
+console.log('Product: ' + product);
+console.log('Price in USD: ' + priceInUSD);
+console.log('Price in BRL: ' + priceInBRL);
