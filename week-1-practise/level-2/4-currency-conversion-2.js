@@ -6,21 +6,29 @@
   They have also decided that they should add a 1% fee to all foreign transactions
   Find a way to add 1% to all currency conversions (think about the DRY principle)
 */
-
+function addFee(price) {
+	let fee = price * 1 / 100;
+	let resultMoney = price - fee;
+	return resultMoney;
+}
+const gbpToUsd = 1.31;
+const gbpToBrl = 4.79;
 function convertToUSD(price) {
-	return price;
+	let convertWithFee = addFee(price) * gbpToUsd;
+	return convertWithFee;
 }
 function convertToBRL(price) {
-	return price;
+	let convertWithFee = addFee(price) * gbpToBrl;
+	return convertWithFee;
 }
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
 
 var product = 'The life and times of Mozafar Haider';
-var price = 12.5;
-var priceInUSD = convertToUSD(price * 1.4);
-var priceInBRL = convertToBRL(priceInUSD * 1.1);
+var price = 10;
+var priceInUSD = convertToUSD(price);
+var priceInBRL = convertToBRL(price);
 
 console.log('Product: ' + product);
 console.log('Price in USD: ' + priceInUSD);
