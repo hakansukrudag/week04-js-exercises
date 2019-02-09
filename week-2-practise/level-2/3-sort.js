@@ -3,8 +3,8 @@
 
 var letters = ["a", "n", "c", "e", "z", "f"];
 var letters2 = ["w", "b", "v", "g", "l", "o"];
-var sortedLetters; // ONLY EDIT THIS LINE
-
+//var sortedLetters; // ONLY EDIT THIS LINE
+var sortedLetters.sort((a, b) => b - a));
 console.log(sortedLetters);
 
 /* 
